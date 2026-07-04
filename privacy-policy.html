@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chính sách quyền riêng tư — DN TUNING V2</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; }
+    p, li { font-size: 0.95rem; }
+    .meta { color: #666; font-size: 0.85rem; }
+    a { color: #0d9488; }
+  </style>
+</head>
+<body>
+  <h1>Chính sách quyền riêng tư</h1>
+  <p class="meta">Ứng dụng: <strong>DN TUNING V2</strong> · Nhà phát triển: <strong>Nguyễn Văn Dương</strong> · Cập nhật: 4 tháng 7, 2026</p>
+
+  <p>
+    Chính sách này mô tả cách ứng dụng DN TUNING V2 (“ứng dụng”, “chúng tôi”) thu thập, sử dụng và bảo vệ thông tin
+    khi bạn sử dụng phần mềm để kết nối và cấu hình ECU qua Bluetooth.
+  </p>
+
+  <h2>1. Thông tin chúng tôi thu thập</h2>
+  <ul>
+    <li><strong>Thông tin kích hoạt thiết bị (tùy chọn):</strong> họ tên khách hàng, số điện thoại, tên đại lý, giá bán, ghi chú — khi bạn gửi yêu cầu kích hoạt trực tuyến.</li>
+    <li><strong>Định danh thiết bị:</strong> địa chỉ MAC của module Bluetooth/ESP32 để xác thực bản quyền và phân quyền tính năng.</li>
+    <li><strong>Dữ liệu vị trí (khi bạn cho phép):</strong> tọa độ và tốc độ GPS trong màn hình Race để hiển thị tốc độ di chuyển. Ứng dụng không theo dõi vị trí nền.</li>
+    <li><strong>Nhật ký kỹ thuật:</strong> lỗi và log debug lưu cục bộ trên thiết bị để hỗ trợ chẩn đoán; bạn có thể xóa hoặc chia sẻ log theo ý muốn.</li>
+  </ul>
+
+  <h2>2. Cách chúng tôi sử dụng thông tin</h2>
+  <ul>
+    <li>Xác thực và quản lý bản quyền thiết bị DN TUNING.</li>
+    <li>Phân quyền tính năng (bảng tuning, GPIO, v.v.) theo chính sách của đại lý/admin.</li>
+    <li>Hỗ trợ kỹ thuật và cải thiện độ ổn định ứng dụng.</li>
+    <li>Hiển thị tốc độ trên màn hình Race khi bạn bật GPS.</li>
+  </ul>
+
+  <h2>3. Lưu trữ và chia sẻ</h2>
+  <p>
+    Dữ liệu kích hoạt trực tuyến được gửi tới máy chủ Supabase do nhà phát triển vận hành.
+    Chúng tôi không bán dữ liệu cá nhân cho bên thứ ba.
+    Dữ liệu có thể được chia sẻ khi pháp luật yêu cầu hoặc để bảo vệ quyền lợi hợp pháp của chúng tôi.
+  </p>
+
+  <h2>4. Quyền trên thiết bị</h2>
+  <ul>
+    <li><strong>Bluetooth:</strong> kết nối module DN TUNING và trao đổi dữ liệu ECU.</li>
+    <li><strong>Vị trí (khi dùng):</strong> yêu cầu trên một số phiên bản Android để quét Bluetooth; và đo tốc độ trong màn Race.</li>
+  </ul>
+
+  <h2>5. Bảo mật</h2>
+  <p>
+    Kết nối máy chủ sử dụng HTTPS. Mã kích hoạt offline được xác minh bằng chữ ký số ECDSA trên thiết bị.
+    Bạn nên giữ an toàn thiết bị và không chia sẻ mã kích hoạt cho người không được phép.
+  </p>
+
+  <h2>6. Quyền của bạn</h2>
+  <p>
+    Bạn có thể từ chối cấp quyền Bluetooth hoặc vị trí; một số tính năng sẽ không hoạt động.
+    Để yêu cầu truy cập, chỉnh sửa hoặc xóa dữ liệu kích hoạt, vui lòng liên hệ:
+    <a href="mailto:vbx6623@gmail.com">vbx6623@gmail.com</a>.
+  </p>
+
+  <h2>7. Trẻ em</h2>
+  <p>Ứng dụng dành cho người dùng có đủ năng lực vận hành và chỉnh sửa ECU; không hướng tới trẻ em dưới 13 tuổi.</p>
+
+  <h2>8. Thay đổi chính sách</h2>
+  <p>Chúng tôi có thể cập nhật chính sách này. Phiên bản mới sẽ được đăng tại cùng địa chỉ URL.</p>
+
+  <h2>9. Liên hệ</h2>
+  <p>
+    <strong>Nhà phát triển:</strong> Nguyễn Văn Dương<br />
+    <strong>Email:</strong> <a href="mailto:vbx6623@gmail.com?subject=DN%20TUNING%20V2%20%E2%80%94%20H%E1%BB%97%20tr%E1%BB%A3">vbx6623@gmail.com</a><br />
+    <strong>Hỗ trợ:</strong> <a href="support.html">Trang hỗ trợ</a>
+  </p>
+</body>
+</html>
