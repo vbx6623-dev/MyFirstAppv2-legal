@@ -1,46 +1,75 @@
 # MyFirstAppv2-legal (public)
 
-Repo **chỉ chứa trang pháp lý** cho App Store — không có mã nguồn app.
+Repo **chỉ chứa trang pháp lý & hỗ trợ** cho App Store — **không có mã nguồn app**.
+
+| Trang | URL live |
+|-------|----------|
+| Trang chủ | https://vbx6623-dev.github.io/MyFirstAppv2-legal/ |
+| Hỗ trợ | https://vbx6623-dev.github.io/MyFirstAppv2-legal/support.html |
+| Quyền riêng tư | https://vbx6623-dev.github.io/MyFirstAppv2-legal/privacy-policy.html |
+| Điều khoản | https://vbx6623-dev.github.io/MyFirstAppv2-legal/terms-of-use.html |
+
+Repo app **MyFirstAppv2** có thể giữ **Private**.
+
+---
 
 ## Tạo repo trên GitHub (một lần)
 
 1. https://github.com/new
-2. Tên repo: **`MyFirstAppv2-legal`**
-3. Chọn **Public**
-4. Không tick README / .gitignore
-5. **Create repository**
+2. Tên: **`MyFirstAppv2-legal`**
+3. **Public** · không tick README
+4. Push nội dung thư mục `legal-site/` từ project app
 
-## Push từ máy (PowerShell)
-
-```powershell
-cd "C:\Users\ADMIN\OneDrive\Desktop\opencode\MyFirstAppv2\legal-site"
-git init
-git add .
-git commit -m "Initial legal pages for DN TUNING V2"
-git branch -M main
-git remote add origin https://github.com/vbx6623-dev/MyFirstAppv2-legal.git
-git push -u origin main
-```
+---
 
 ## Bật GitHub Pages
 
-1. Repo **MyFirstAppv2-legal** → **Settings** → **Pages**
-2. **Source:** chọn **GitHub Actions** (không dùng "Deploy from a branch")
-3. Sau push, vào tab **Actions** — đợi workflow **Deploy GitHub Pages** chạy xong (dấu tick xanh)
-4. Quay lại **Settings → Pages** — sẽ có link **Visit site**
+1. Repo → **Settings** → **Pages**
+2. **Source:** **GitHub Actions** (không dùng "Deploy from a branch")
+3. Push lên `main` → tab **Actions** → workflow **Deploy GitHub Pages** (tick xanh)
+4. **Visit site** xuất hiện trong Settings → Pages
 
-- https://vbx6623-dev.github.io/MyFirstAppv2-legal/support.html
-- https://vbx6623-dev.github.io/MyFirstAppv2-legal/privacy-policy.html
+Workflow: [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
+
+---
 
 ## Cập nhật sau này
 
-Sửa file HTML trong `legal-site/`, rồi:
+Sửa HTML/CSS trong `legal-site/` (font: **Be Vietnam Pro** trong `assets/style.css`):
 
 ```powershell
-cd legal-site
+cd "C:\Users\ADMIN\OneDrive\Desktop\opencode\MyFirstAppv2\legal-site"
 git add .
 git commit -m "Update legal pages"
-git push
+git push origin main
 ```
 
-Repo **MyFirstAppv2** (app) có thể giữ **Private**.
+GitHub Actions tự deploy — đợi 1–2 phút rồi refresh URL.
+
+---
+
+## Đồng bộ với app
+
+URL trong app lấy từ [`app/constants/legal.ts`](../app/constants/legal.ts) và [`app.json`](../app.json) → `extra.privacyPolicyUrl`, `supportUrl`.
+
+Sau khi đổi URL, cập nhật cả:
+- `legal.ts`
+- `app.json` → `extra`
+- App Store Connect (Privacy Policy URL, Support URL)
+
+---
+
+## App Store Connect
+
+| Trường | Giá trị |
+|--------|---------|
+| Privacy Policy URL | `…/privacy-policy.html` |
+| Support URL | `…/support.html` |
+| Support Email | vbx6623@gmail.com |
+| Developer | Nguyễn Văn Dương |
+
+Checklist đầy đủ: [docs/APP_STORE_SUBMISSION.md](../docs/APP_STORE_SUBMISSION.md)
+
+---
+
+*Cập nhật: 4 tháng 7, 2026*
