@@ -25,10 +25,9 @@ git push -u origin main
 ## Bật GitHub Pages
 
 1. Repo **MyFirstAppv2-legal** → **Settings** → **Pages**
-2. Branch: **main**, Folder: **/ (root)**
-3. Save
-
-URL sau ~2 phút:
+2. **Source:** chọn **GitHub Actions** (không dùng "Deploy from a branch")
+3. Sau push, vào tab **Actions** — đợi workflow **Deploy GitHub Pages** chạy xong (dấu tick xanh)
+4. Quay lại **Settings → Pages** — sẽ có link **Visit site**
 
 - https://vbx6623-dev.github.io/MyFirstAppv2-legal/support.html
 - https://vbx6623-dev.github.io/MyFirstAppv2-legal/privacy-policy.html
