@@ -72,4 +72,4 @@ Checklist đầy đủ: [docs/APP_STORE_SUBMISSION.md](../docs/APP_STORE_SUBMISS
 
 ---
 
-*Cập nhật: 4 tháng 7, 2026*
+*Cập nhật: 5 tháng 7, 2026*
