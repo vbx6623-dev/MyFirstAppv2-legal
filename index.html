@@ -61,8 +61,8 @@
         </h1>
 
         <p class="hero-centered-desc">
-          Ứng dụng di động chuyên nghiệp giúp kết nối Bluetooth BLE, giám sát dữ liệu cảm biến LIVE real-time (tốc độ đọc 100ms), 
-          căn chỉnh ma trận xăng/lửa 4 Map, đo tốc độ GPS thô 0ms delay và tính toán công suất Dyno (HP/Torque) chính xác.
+          Ứng dụng di động chuyên nghiệp giúp kết nối Bluetooth BLE, giám sát dữ liệu cảm biến LIVE real-time, 
+          căn chỉnh ma trận xăng/lửa 4 Map, đo tốc độ GPS thô không trễ và tính toán công suất Dyno (HP/Torque) chính xác.
         </p>
 
         <div class="cta-row">
@@ -107,17 +107,17 @@
       <div class="stat-card">
         <div class="stat-value">Hệ 9/10/11</div>
         <div class="stat-label">Hỗ Trợ ECU DN TUNING</div>
-        <div class="stat-desc">Tương thích dải ID &amp; 4 Map tinh chỉnh</div>
+        <div class="stat-desc">Tương thích các dòng ECU &amp; 4 Map tinh chỉnh</div>
       </div>
       <div class="stat-card">
         <div class="stat-value">GPS &amp; Dyno</div>
         <div class="stat-label">Màn Hình RACE Cockpit</div>
-        <div class="stat-desc">Đo tốc độ thô 0ms &amp; tính HP/Torque</div>
+        <div class="stat-desc">Đo tốc độ thô không trễ &amp; tính HP/Torque</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value">Supabase</div>
+        <div class="stat-value">Cloud</div>
         <div class="stat-label">Bảo Mật Điện Toán Mây</div>
-        <div class="stat-desc">Đồng bộ MAC đối tác &amp; bản quyền</div>
+        <div class="stat-desc">Đồng bộ thiết bị đối tác &amp; bản quyền</div>
       </div>
     </section>
 
@@ -167,7 +167,7 @@
           </div>
           <div class="gallery-card-caption">
             <div class="gallery-card-title">Màn Hình RACE Mode</div>
-            <div class="gallery-card-sub">Đồng hồ GPS thô 0ms delay</div>
+            <div class="gallery-card-sub">Đồng hồ GPS thô không trễ</div>
           </div>
         </div>
 
@@ -188,8 +188,8 @@
             <img src="assets/screenshots/app_06.jpg" alt="DN TUNING V2 Screen 06" loading="lazy" />
           </div>
           <div class="gallery-card-caption">
-            <div class="gallery-card-title">Cấu Hình Hệ 11.x Dzfm</div>
-            <div class="gallery-card-sub">Mã hóa điện tử &amp; V_Ect_On</div>
+            <div class="gallery-card-title">Cấu Hình Hệ Thống Nâng Cao</div>
+            <div class="gallery-card-sub">Tự động nhận diện &amp; Quản lý nhiệt độ</div>
           </div>
         </div>
 
@@ -221,7 +221,7 @@
             <img src="assets/screenshots/app_09.jpg" alt="DN TUNING V2 Screen 09" loading="lazy" />
           </div>
           <div class="gallery-card-caption">
-            <div class="gallery-card-title">Giám Sát Cảm Biến ECT / IAT</div>
+            <div class="gallery-card-title">Giám Sát Cảm Biến Động Cơ</div>
             <div class="gallery-card-sub">Nhiệt độ máy &amp; Khí nạp real-time</div>
           </div>
         </div>
@@ -233,7 +233,7 @@
           </div>
           <div class="gallery-card-caption">
             <div class="gallery-card-title">Ma Trận Tinh Chỉnh Cao Cấp</div>
-            <div class="gallery-card-sub">Đảo ngược dải RPM / TPS UI</div>
+            <div class="gallery-card-sub">Tối ưu trải nghiệm màn hình tuning</div>
           </div>
         </div>
 
@@ -277,7 +277,7 @@
           </div>
           <div class="gallery-card-caption">
             <div class="gallery-card-title">Thông Tin Bản Quyền &amp; Hỗ Trợ</div>
-            <div class="gallery-card-sub">Kích hoạt MAC đối tác &amp; Supabase Cloud</div>
+            <div class="gallery-card-sub">Kích hoạt thiết bị đối tác &amp; Bảo mật Cloud</div>
           </div>
         </div>
       </div>
@@ -285,41 +285,41 @@
 
     <!-- ECU Compatibility Table -->
     <section>
-      <h2>Bảng Tương Thích &amp; Giao Thức ECU DN TUNING</h2>
-      <p>Ứng dụng tự động nhận diện và xử lý chính xác các dải gói tin theo cấu hình phần cứng ECU của phương tiện:</p>
+      <h2>Bảng Tương Thích Các Dòng ECU DN TUNING</h2>
+      <p>Ứng dụng tự động nhận diện và xử lý chính xác cấu hình phần cứng ECU của phương tiện:</p>
 
       <div class="table-responsive">
         <table class="ecu-table">
           <thead>
             <tr>
               <th>Dòng ECU DN TUNING</th>
-              <th>System Version</th>
-              <th>Độ dài Gói tin Đọc/Ghi</th>
-              <th>Khung Nhiệt Độ Bins</th>
+              <th>Phân Loại Thế Hệ</th>
+              <th>Bản Đồ Tuning</th>
+              <th>Phạm Vi Hoạt Động</th>
               <th>Tính Năng Hỗ Trợ</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><strong>DN TUNING Hệ 9.x</strong></td>
-              <td>`systemVersion = 1`</td>
-              <td>Đọc 137B / Ghi 138B</td>
-              <td>ECT (0°C – 140°C) · IAT (0°C – 60°C)</td>
-              <td>Góc lửa, Lượng phun uint8/uint16, 4 Map, Live Dashboard</td>
+              <td>Thế hệ 9</td>
+              <td>4 Map Phun Xăng / Góc Lửa</td>
+              <td>Động cơ tiêu chuẩn</td>
+              <td>Góc đánh lửa, Lượng phun, Live Dashboard</td>
             </tr>
             <tr>
               <td><strong>DN TUNING Hệ 10.x</strong></td>
-              <td>`systemVersion = 3`</td>
-              <td>Đọc 288B / Ghi 290B</td>
-              <td>ECT (-14°C – 126°C) · IAT (-14°C – 56°C)</td>
-              <td>Option 16 field, AutoShift, EctStrt, Race Dyno</td>
+              <td>Thế hệ 10</td>
+              <td>4 Map Phun Xăng / Góc Lửa</td>
+              <td>Động cơ thể thao &amp; Xe đua</td>
+              <td>RACE Mode, Dyno ảo, Hỗ trợ chuyển số mượt mà</td>
             </tr>
             <tr>
               <td><strong>DN TUNING Hệ 11.x</strong></td>
-              <td>`systemVersion = 2`</td>
-              <td>Đọc 289B / Ghi 291B</td>
-              <td>ECT (-14°C – 126°C) · IAT (-14°C – 46°C)</td>
-              <td>Option 30 field, Dzfm (Mã hóa điện tử), MAP Reverse UI</td>
+              <td>Thế hệ 11</td>
+              <td>4 Map Phun Xăng / Góc Lửa</td>
+              <td>Động cơ cao cấp thế hệ mới</td>
+              <td>Tự động nhận diện cấu hình, Ma trận tinh chỉnh mở rộng</td>
             </tr>
           </tbody>
         </table>
@@ -358,7 +358,7 @@
           </div>
           <div>
             <div class="link-card-title">Chính sách Quyền riêng tư</div>
-            <div class="link-card-desc">Cam kết bảo mật dữ liệu cá nhân, quyền truy cập Bluetooth/GPS vị trí và quy định lưu trữ trên Supabase Cloud.</div>
+            <div class="link-card-desc">Cam kết bảo mật dữ liệu cá nhân, quyền truy cập Bluetooth/GPS vị trí và quy định lưu trữ bảo mật Cloud.</div>
           </div>
         </a>
 
@@ -399,21 +399,21 @@
         <div class="faq-item">
           <div class="faq-question">Ứng dụng hỗ trợ những dòng ECU DN TUNING nào?</div>
           <div class="faq-answer">
-            DN TUNING V2 hỗ trợ đầy đủ tất cả các thế hệ ECU DN TUNING bao gồm: Hệ 9.x (9.1x, 9.2), Hệ 10.x (10.22, 10.3.1+) và Hệ 11.x (11.1.6). Ứng dụng tự động phân tích độ dài gói tin để áp dụng cấu hình giải mã chuẩn nhất.
+            DN TUNING V2 hỗ trợ đầy đủ tất cả các thế hệ ECU DN TUNING bao gồm: Hệ 9.x, Hệ 10.x và Hệ 11.x. Ứng dụng tự động phân tích và áp dụng cấu hình tương thích chuẩn nhất.
           </div>
         </div>
 
         <div class="faq-item">
           <div class="faq-question">Tốc độ GPS và công suất Dyno trong màn hình RACE được tính thế nào?</div>
           <div class="faq-answer">
-            Màn hình RACE sử dụng trực tiếp tốc độ thô từ phần cứng chip GPS (Doppler speed) với độ trễ bằng 0ms để ghi nhận thời gian tăng tốc. Công suất Dyno được tính toán dựa trên định luật động học F = m.a cộng với lực cản không khí và ma sát lăn để đưa ra chỉ số Mã lực (HP) và Mô-men xoắn (N.m) tức thì.
+            Màn hình RACE sử dụng trực tiếp tốc độ thô từ phần cứng chip GPS không trễ để ghi nhận thời gian tăng tốc. Công suất Dyno được tính toán dựa trên định luật động học và lực cản phương tiện để đưa ra chỉ số Mã lực (HP) và Mô-men xoắn (N.m) tức thì.
           </div>
         </div>
 
         <div class="faq-item">
           <div class="faq-question">Làm cách nào để yêu cầu kích hoạt địa chỉ MAC đối tác?</div>
           <div class="faq-answer">
-            Vào Tab 4 <strong>Cài đặt</strong> → sao chép địa chỉ MAC của module Bluetooth và gửi email đến <strong>vbx6623@gmail.com</strong>. Quản trị viên sẽ phê duyệt quyền kích hoạt trên hệ thống Supabase Cloud.
+            Vào Tab 4 <strong>Cài đặt</strong> → sao chép địa chỉ MAC của module Bluetooth và gửi email đến <strong>vbx6623@gmail.com</strong>. Quản trị viên sẽ phê duyệt quyền kích hoạt trên hệ thống điện toán mây.
           </div>
         </div>
       </div>
