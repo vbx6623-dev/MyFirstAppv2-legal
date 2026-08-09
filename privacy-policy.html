@@ -9,31 +9,44 @@
   <!-- Google Fonts Preconnect & Stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header class="site-header">
-      <a href="index.html" class="brand">
-        <div class="brand-mark-wrapper">
-          <div class="brand-mark-glow"></div>
-          <div class="brand-mark">DN</div>
-        </div>
-        <div class="brand-info">
-          <span class="brand-name">DN TUNING V2</span>
-          <span class="brand-tag">ECU Bluetooth Tuning &amp; Telemetry</span>
-        </div>
-      </a>
-      <nav class="nav">
-        <a href="index.html">Trang chủ</a>
-        <a href="support.html">Hỗ trợ</a>
-        <a href="privacy-policy.html" class="active">Quyền riêng tư</a>
-        <a href="terms-of-use.html">Điều khoản</a>
-      </nav>
-    </header>
 
+  <!-- Sticky Navigation Header -->
+  <div class="header-sticky-wrapper">
+    <div class="wrap">
+      <header class="site-header">
+        <a href="index.html" class="brand">
+          <div class="brand-mark-wrapper">
+            <div class="brand-mark-glow"></div>
+            <div class="brand-mark">DN</div>
+          </div>
+          <div class="brand-info">
+            <span class="brand-name">DN TUNING V2</span>
+            <span class="brand-tag">ECU Bluetooth Telemetry</span>
+          </div>
+        </a>
+
+        <nav class="nav">
+          <a href="index.html">Trang chủ</a>
+          <a href="support.html">Hỗ trợ</a>
+          <a href="privacy-policy.html" class="active">Quyền riêng tư</a>
+          <a href="terms-of-use.html">Điều khoản</a>
+        </nav>
+
+        <div class="header-action">
+          <a class="btn btn-primary" href="mailto:vbx6623@gmail.com?subject=DN%20TUNING%20V2%20%E2%80%94%20H%E1%BB%97%20tr%E1%BB%A3" style="padding: 10px 20px; font-size: 0.875rem;">
+            Liên hệ Hỗ trợ
+          </a>
+        </div>
+      </header>
+    </div>
+  </div>
+
+  <div class="wrap">
     <main class="card">
       <div class="status-badge">
         <div class="status-dot"></div>
@@ -81,7 +94,7 @@
 
       <div class="info-box">
         <div class="info-box-title">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
           </svg>
           Cam kết bảo mật thông tin tuyệt đối
@@ -110,15 +123,51 @@
         <a class="btn btn-ghost" href="index.html">← Quay lại Trang chủ</a>
       </div>
     </main>
-
-    <footer class="site-footer">
-      <div class="footer-links">
-        <a href="index.html">Trang chủ</a>
-        <a href="support.html">Hỗ trợ</a>
-        <a href="terms-of-use.html">Điều khoản</a>
-      </div>
-      <p>© 2026 Nguyễn Văn Dương · DN TUNING V2. All rights reserved.</p>
-    </footer>
   </div>
+
+  <!-- Multi-Column Footer -->
+  <footer class="site-footer-wrapper">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">DN TUNING V2</div>
+          <div class="footer-brand-desc">
+            Ứng dụng điều khiển, giám sát dữ liệu cảm biến LIVE và tinh chỉnh bản đồ ECU Redleo chuyên nghiệp trên thiết bị di động.
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Tài Liệu Legal</div>
+          <div class="footer-links-col">
+            <a href="support.html">Hỗ trợ &amp; Reviewer</a>
+            <a href="privacy-policy.html">Chính sách Quyền riêng tư</a>
+            <a href="terms-of-use.html">Điều khoản Sử dụng</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Kênh Trực Tuyến</div>
+          <div class="footer-links-col">
+            <a href="mailto:vbx6623@gmail.com">vbx6623@gmail.com</a>
+            <a href="https://www.facebook.com/share/1Fj2tzWj4P/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook Community</a>
+            <a href="https://www.tiktok.com/@duongthatthax?_r=1&amp;_t=ZS-97rjvl7gV2O" target="_blank" rel="noopener">TikTok Channel</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Thông Tin Nhà Phát Triển</div>
+          <div class="footer-links-col">
+            <span style="font-size: 0.875rem; color: #94a3b8;">Tác giả: Nguyễn Văn Dương</span>
+            <span style="font-size: 0.875rem; color: #94a3b8;">Phiên bản App: 2.1.0</span>
+            <span style="font-size: 0.875rem; color: #94a3b8;">App Store Verified</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Nguyễn Văn Dương · DN TUNING V2. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
