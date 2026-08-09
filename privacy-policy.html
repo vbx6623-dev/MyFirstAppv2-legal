@@ -2,18 +2,21 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Chính sách quyền riêng tư — DN TUNING V2" />
-  <title>Chính sách quyền riêng tư — DN TUNING V2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chính sách quyền riêng tư và quy định bảo mật dữ liệu — DN TUNING V2" />
+  <title>Chính sách Quyền riêng tư — DN TUNING V2</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <div class="wrap">
     <header class="site-header">
       <a href="index.html" class="brand">
-        <div class="brand-mark">DN</div>
+        <div class="brand-mark-wrapper">
+          <div class="brand-mark-glow"></div>
+          <div class="brand-mark">DN</div>
+        </div>
         <span class="brand-name">DN TUNING V2</span>
-        <span class="brand-tag">ECU Bluetooth Tuning</span>
+        <span class="brand-tag">ECU Bluetooth Tuning &amp; Telemetry</span>
       </a>
       <nav class="nav">
         <a href="index.html">Trang chủ</a>
@@ -24,72 +27,89 @@
     </header>
 
     <main class="card">
-      <h1 class="page-title">Chính sách quyền riêng tư</h1>
-      <p class="meta">Nhà phát triển: <strong>Nguyễn Văn Dương</strong> · Cập nhật 5/7/2026</p>
+      <div class="status-badge">
+        <div class="status-dot"></div>
+        <span>Quy định Bảo mật Dữ liệu Người dùng</span>
+      </div>
+
+      <h1 class="page-title">Chính sách Quyền riêng tư</h1>
+      <p class="meta">
+        Nhà phát triển: <strong>Nguyễn Văn Dương</strong> &nbsp;•&nbsp; Cập nhật: <strong>5 tháng 7, 2026</strong>
+      </p>
+
       <p class="lead">
-        Chính sách này mô tả cách DN TUNING V2 thu thập, sử dụng và bảo vệ thông tin
-        khi bạn kết nối và cấu hình ECU qua Bluetooth.
+        Chính sách quyền riêng tư này giải thích rõ ràng cách ứng dụng <strong>DN TUNING V2</strong> thu thập, 
+        sử dụng và bảo vệ thông tin cá nhân cũng như dữ liệu thiết bị của bạn khi trải nghiệm dịch vụ.
       </p>
 
-      <h2>1. Thông tin thu thập</h2>
+      <h2>1. Thu thập dữ liệu và Quyền thiết bị</h2>
+      <p>Ứng dụng chỉ yêu cầu các quyền truy cập tối thiểu cần thiết để vận hành các chức năng kỹ thuật:</p>
       <ul>
-        <li><strong>Kích hoạt (tùy chọn):</strong> họ tên, số điện thoại, đại lý, giá bán, ghi chú — khi gửi yêu cầu kích hoạt trực tuyến.</li>
-        <li><strong>Thiết bị:</strong> địa chỉ MAC module Bluetooth để xác thực bản quyền và phân quyền.</li>
-        <li><strong>Vị trí (khi cho phép):</strong> GPS trong màn Race để hiển thị tốc độ — không theo dõi nền.</li>
-        <li><strong>Log kỹ thuật:</strong> lưu cục bộ trên thiết bị; bạn có thể xóa hoặc chia sẻ theo ý muốn.</li>
+        <li>
+          <strong>Kết nối Bluetooth (BLE):</strong> Sử dụng để dò tìm, kết nối và trao đổi dữ liệu hai chiều với module phần cứng Bluetooth DN TUNING gắn trên ECU Redleo.
+        </li>
+        <li>
+          <strong>Vị trí địa lý (Location / GPS):</strong> 
+          Trên Android, quyền vị trí được hệ điều hành yêu cầu để quét thiết bị Bluetooth xung quanh. 
+          Trên màn hình RACE, dữ liệu GPS được dùng trực tiếp để hiển thị tốc độ di chuyển (km/h) và tính toán thời gian gia tốc thực tế.
+        </li>
+        <li>
+          <strong>Địa chỉ MAC thiết bị:</strong> Ứng dụng đọc mã MAC của module DN TUNING để kiểm tra quyền kích hoạt bản quyền thiết bị đối tác (Partner Activation).
+        </li>
       </ul>
 
-      <h2>2. Mục đích sử dụng</h2>
+      <h2>2. Lưu trữ và Bảo mật dữ liệu</h2>
       <ul>
-        <li>Quản lý bản quyền và phân quyền tính năng ECU</li>
-        <li>Hỗ trợ kỹ thuật và cải thiện ứng dụng</li>
-        <li>Hiển thị tốc độ trên màn hình Race</li>
+        <li>
+          <strong>Lưu trữ trên thiết bị (AsyncStorage):</strong> Bản đồ tuning (Map 1–4), cấu hình chung và lịch sử cài đặt được lưu cục bộ an toàn trong bộ nhớ riêng của ứng dụng trên điện thoại.
+        </li>
+        <li>
+          <strong>Đồng bộ Điện toán mây (Supabase Cloud):</strong> Thông tin địa chỉ MAC và trạng thái kích hoạt thiết bị được xác thực qua Supabase Cloud với kết nối mã hóa SSL/TLS an toàn.
+        </li>
+        <li>
+          <strong>Không chia sẻ bên thứ ba:</strong> Chúng tôi cam kết tuyệt đối không bán, chia sẻ hoặc tiết lộ bất kỳ dữ liệu cá nhân nào của bạn cho bất kỳ đối tác thương mại hoặc bên thứ ba nào khác.
+        </li>
       </ul>
 
-      <h2>3. Lưu trữ &amp; chia sẻ</h2>
-      <p>
-        Dữ liệu kích hoạt trực tuyến được gửi tới máy chủ Supabase do nhà phát triển vận hành.
-        Chúng tôi không bán dữ liệu cá nhân cho bên thứ ba.
-      </p>
+      <div class="info-box">
+        <div class="info-box-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          Cam kết bảo mật thông tin tuyệt đối
+        </div>
+        <p>
+          Dữ liệu tinh chỉnh ECU của bạn hoàn toàn thuộc quyền sở hữu của bạn. Ứng dụng không thu thập thông tin định danh cá nhân, danh bạ hay hình ảnh riêng tư trên thiết bị của bạn.
+        </p>
+      </div>
 
-      <h2>4. Quyền trên thiết bị</h2>
+      <h2>3. Quyền hạn của người dùng</h2>
       <ul>
-        <li><strong>Bluetooth</strong> — kết nối module DN TUNING và trao đổi dữ liệu ECU</li>
-        <li><strong>Vị trí</strong> — quét BLE (Android) và đo tốc độ Race</li>
+        <li>Bạn có quyền từ chối hoặc thu hồi quyền truy cập Bluetooth/GPS trong phần Cài đặt của điện thoại bất kỳ lúc nào.</li>
+        <li>Bạn có quyền yêu cầu xóa bỏ thông tin kích hoạt MAC thiết bị khỏi hệ thống Cloud bằng cách liên hệ qua email hỗ trợ.</li>
       </ul>
 
-      <h2>5. Bảo mật</h2>
+      <h2>4. Thay đổi chính sách</h2>
       <p>
-        Kết nối máy chủ dùng HTTPS. Mã kích hoạt offline được xác minh bằng chữ ký ECDSA trên thiết bị.
+        Chính sách bảo mật này có thể được cập nhật định kỳ để phù hợp với các phiên bản mới của ứng dụng hoặc quy định của Apple App Store &amp; Google Play Store. 
+        Mọi thay đổi sẽ được công bố công khai trên trang web này.
       </p>
-
-      <h2>6. Quyền của bạn</h2>
-      <p>
-        Bạn có thể từ chối quyền Bluetooth hoặc vị trí; một số tính năng sẽ không hoạt động.
-        Để yêu cầu truy cập, sửa hoặc xóa dữ liệu kích hoạt, liên hệ qua email:
-        <a href="mailto:vbx6623@gmail.com">vbx6623@gmail.com</a> hoặc qua các kênh mạng xã hội chính thức:
-        <a href="https://www.facebook.com/share/1Fj2tzWj4P/?mibextid=wwXIfr" target="_blank">Facebook</a> / 
-        <a href="https://www.tiktok.com/@duongthatthax?_r=1&_t=ZS-97rjvl7gV2O" target="_blank">TikTok</a>.
-      </p>
-
-      <h2>7. Trẻ em</h2>
-      <p>Ứng dụng không hướng tới trẻ em dưới 13 tuổi.</p>
-
-      <h2>8. Thay đổi chính sách</h2>
-      <p>Phiên bản mới sẽ được đăng tại cùng địa chỉ URL này.</p>
 
       <div class="cta-row">
-        <a class="btn btn-primary" href="mailto:vbx6623@gmail.com?subject=DN%20TUNING%20V2%20%E2%80%94%20Privacy">Liên hệ về quyền riêng tư</a>
-        <a class="btn btn-ghost" href="support.html">Trang hỗ trợ</a>
+        <a class="btn btn-primary" href="mailto:vbx6623@gmail.com?subject=DN%20TUNING%20V2%20%E2%80%94%20H%E1%BB%8fi%20d%C3%A1p%20B%E1%BA%A3o%20m%E1%BA%B7t">
+          Liên hệ giải đáp Bảo mật
+        </a>
+        <a class="btn btn-ghost" href="index.html">← Quay lại Trang chủ</a>
       </div>
     </main>
 
     <footer class="site-footer">
       <div class="footer-links">
+        <a href="index.html">Trang chủ</a>
         <a href="support.html">Hỗ trợ</a>
         <a href="terms-of-use.html">Điều khoản</a>
       </div>
-      © 2026 Nguyễn Văn Dương · DN TUNING V2
+      <p>© 2026 Nguyễn Văn Dương · DN TUNING V2. All rights reserved.</p>
     </footer>
   </div>
 </body>

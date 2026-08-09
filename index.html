@@ -2,18 +2,21 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Trang pháp lý và hỗ trợ chính thức — DN TUNING V2" />
-  <title>DN TUNING V2 — Hỗ trợ &amp; Pháp lý</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DN TUNING V2 — Trang thông tin chính thức, tài liệu hỗ trợ kỹ thuật và chính sách ứng dụng ECU Bluetooth Tuning" />
+  <title>DN TUNING V2 — Hỗ trợ Kỹ thuật &amp; Pháp lý</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <div class="wrap">
     <header class="site-header">
       <a href="index.html" class="brand">
-        <div class="brand-mark">DN</div>
+        <div class="brand-mark-wrapper">
+          <div class="brand-mark-glow"></div>
+          <div class="brand-mark">DN</div>
+        </div>
         <span class="brand-name">DN TUNING V2</span>
-        <span class="brand-tag">ECU Bluetooth Tuning</span>
+        <span class="brand-tag">ECU Bluetooth Tuning &amp; Telemetry</span>
       </a>
       <nav class="nav">
         <a href="index.html" class="active">Trang chủ</a>
@@ -24,32 +27,89 @@
     </header>
 
     <main class="card">
-      <h1 class="page-title">Tài liệu chính thức</h1>
-      <p class="meta">Nhà phát triển: <strong>Nguyễn Văn Dương</strong> · Cập nhật 5/7/2026</p>
+      <div class="status-badge">
+        <div class="status-dot"></div>
+        <span>App Store Verified · BLE 5.0 High Speed</span>
+      </div>
+
+      <h1 class="page-title">Trang Hỗ trợ &amp; Tài liệu Chính thức</h1>
+      <p class="meta">
+        Tác giả: <strong>Nguyễn Văn Dương</strong> &nbsp;•&nbsp; Phiên bản: <strong>2.1.0</strong>
+      </p>
+
       <p class="lead">
-        Ứng dụng điều khiển và cấu hình ECU qua module Bluetooth DN TUNING.
-        Chọn mục bên dưới để xem hỗ trợ hoặc tài liệu pháp lý.
+        Chào mừng bạn đến với trang thông tin chính thức của ứng dụng <strong>DN TUNING V2</strong>. 
+        Ứng dụng hỗ trợ kết nối, giám sát dữ liệu cảm biến LIVE, căn chỉnh map phun xăng/góc lửa ECU qua Bluetooth BLE 
+        hỗ trợ đầy đủ các hệ ECU Redleo (Hệ 9.x, 10.x, 11.x).
       </p>
 
       <div class="link-grid">
         <a href="support.html" class="link-card">
-          <div class="link-card-title">Hỗ trợ &amp; liên hệ</div>
-          <div class="link-card-desc">Email, hướng dẫn báo lỗi và chế độ xem thử App Review</div>
+          <div class="link-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <div class="link-card-body">
+            <div class="link-card-title">
+              <span>Hỗ trợ kỹ thuật &amp; Liên hệ</span>
+              <span class="link-card-arrow">→</span>
+            </div>
+            <div class="link-card-desc">Gửi yêu cầu hỗ trợ Bluetooth BLE, báo lỗi app, kích hoạt MAC &amp; hướng dẫn chế độ Demo/App Review</div>
+          </div>
         </a>
+
         <a href="privacy-policy.html" class="link-card">
-          <div class="link-card-title">Chính sách quyền riêng tư</div>
-          <div class="link-card-desc">Dữ liệu thu thập, quyền thiết bị và bảo mật</div>
+          <div class="link-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <div class="link-card-body">
+            <div class="link-card-title">
+              <span>Chính sách quyền riêng tư</span>
+              <span class="link-card-arrow">→</span>
+            </div>
+            <div class="link-card-desc">Cam kết bảo mật dữ liệu, quyền truy cập Bluetooth/GPS và quy định lưu trữ Supabase Cloud</div>
+          </div>
         </a>
+
         <a href="terms-of-use.html" class="link-card">
-          <div class="link-card-title">Điều khoản sử dụng</div>
-          <div class="link-card-desc">Trách nhiệm, bản quyền và miễn trừ</div>
+          <div class="link-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <div class="link-card-body">
+            <div class="link-card-title">
+              <span>Điều khoản sử dụng</span>
+              <span class="link-card-arrow">→</span>
+            </div>
+            <div class="link-card-desc">Quy định trách nhiệm sử dụng, bản quyền phần mềm và hướng dẫn vận hành an toàn</div>
+          </div>
         </a>
       </div>
 
+      <h2>Kênh liên hệ hỗ trợ nhanh</h2>
       <div class="cta-row">
-        <a class="btn btn-primary" href="mailto:vbx6623@gmail.com?subject=DN%20TUNING%20V2%20%E2%80%94%20H%E1%BB%97%20tr%E1%BB%A3">vbx6623@gmail.com</a>
-        <a class="btn btn-ghost" href="https://www.facebook.com/share/1Fj2tzWj4P/?mibextid=wwXIfr" target="_blank">Facebook</a>
-        <a class="btn btn-ghost" href="https://www.tiktok.com/@duongthatthax?_r=1&_t=ZS-97rjvl7gV2O" target="_blank">TikTok</a>
+        <a class="btn btn-primary" href="mailto:vbx6623@gmail.com?subject=DN%20TUNING%20V2%20%E2%80%94%20H%E1%BB%97%20tr%E1%BB%A3">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          vbx6623@gmail.com
+        </a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/share/1Fj2tzWj4P/?mibextid=wwXIfr" target="_blank" rel="noopener">
+          Facebook Kỹ Thuật
+        </a>
+        <a class="btn btn-ghost" href="https://www.tiktok.com/@duongthatthax?_r=1&amp;_t=ZS-97rjvl7gV2O" target="_blank" rel="noopener">
+          TikTok Channel
+        </a>
       </div>
     </main>
 
@@ -59,7 +119,7 @@
         <a href="privacy-policy.html">Quyền riêng tư</a>
         <a href="terms-of-use.html">Điều khoản</a>
       </div>
-      © 2026 Nguyễn Văn Dương · DN TUNING V2
+      <p>© 2026 Nguyễn Văn Dương · DN TUNING V2. All rights reserved.</p>
     </footer>
   </div>
 </body>

@@ -2,18 +2,21 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Điều khoản sử dụng — DN TUNING V2" />
-  <title>Điều khoản sử dụng — DN TUNING V2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Điều khoản sử dụng và quy định trách nhiệm phần mềm — DN TUNING V2" />
+  <title>Điều khoản Sử dụng — DN TUNING V2</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <div class="wrap">
     <header class="site-header">
       <a href="index.html" class="brand">
-        <div class="brand-mark">DN</div>
+        <div class="brand-mark-wrapper">
+          <div class="brand-mark-glow"></div>
+          <div class="brand-mark">DN</div>
+        </div>
         <span class="brand-name">DN TUNING V2</span>
-        <span class="brand-tag">ECU Bluetooth Tuning</span>
+        <span class="brand-tag">ECU Bluetooth Tuning &amp; Telemetry</span>
       </a>
       <nav class="nav">
         <a href="index.html">Trang chủ</a>
@@ -24,56 +27,83 @@
     </header>
 
     <main class="card">
-      <h1 class="page-title">Điều khoản sử dụng</h1>
-      <p class="meta">Nhà phát triển: <strong>Nguyễn Văn Dương</strong> · Cập nhật 5/7/2026</p>
+      <div class="status-badge">
+        <div class="status-dot"></div>
+        <span>Thỏa thuận &amp; Quy định Dịch vụ</span>
+      </div>
+
+      <h1 class="page-title">Điều khoản Sử dụng</h1>
+      <p class="meta">
+        Nhà phát triển: <strong>Nguyễn Văn Dương</strong> &nbsp;•&nbsp; Cập nhật: <strong>5 tháng 7, 2026</strong>
+      </p>
+
       <p class="lead">
-        Bằng việc cài đặt hoặc sử dụng DN TUNING V2, bạn đồng ý với các điều khoản dưới đây.
-        Nếu không đồng ý, vui lòng không sử dụng ứng dụng.
+        Bằng việc tải xuống, cài đặt hoặc trải nghiệm ứng dụng <strong>DN TUNING V2</strong>, bạn đồng ý tuân thủ 
+        và chịu sự ràng buộc bởi các điều khoản và điều kiện sử dụng dưới đây.
       </p>
 
-      <h2>1. Mục đích sử dụng</h2>
+      <h2>1. Phạm vi dịch vụ &amp; Chức năng</h2>
       <p>
-        Ứng dụng dùng để kết nối, đọc và cấu hình ECU qua module DN TUNING (Bluetooth).
-        Bạn chịu trách nhiệm tuân thủ pháp luật và an toàn khi chỉnh thông số động cơ.
+        <strong>DN TUNING V2</strong> cung cấp giao diện di động cho phép người dùng kết nối Bluetooth BLE với module DN TUNING, 
+        hiển thị dữ liệu vòng tua máy, TPS, điện áp cảm biến LIVE, và điều chỉnh các bản đồ thông số ECU (Lượng phun, Góc đánh lửa, Nhàn rỗi...).
       </p>
 
-      <h2>2. Bản quyền &amp; kích hoạt</h2>
+      <h2>2. Khuyến cáo an toàn &amp; Khống chế trách nhiệm</h2>
       <ul>
-        <li>Một số tính năng yêu cầu kích hoạt thiết bị hợp lệ theo chính sách nhà phát triển/đại lý.</li>
-        <li>Không chia sẻ mã kích hoạt, bypass phân quyền hoặc reverse-engineer ứng dụng trái phép.</li>
+        <li>
+          <strong>An toàn vận hành:</strong> Việc điều chỉnh bản đồ xăng và góc lửa của động cơ đòi hỏi kiến thức chuyên môn về kỹ thuật động cơ. 
+          Người dùng chịu hoàn toàn trách nhiệm đối với các thông số cài đặt được ghi xuống ECU của phương tiện.
+        </th>
+        <li>
+          <strong>Cảnh báo khi di chuyển:</strong> Không thao tác cài đặt hoặc tập trung nhìn màn hình tinh chỉnh khi đang điều khiển phương tiện giao thông trên đường. 
+          Hãy đỗ xe an toàn trước khi thay đổi thông số ECU.
+        </li>
+        <li>
+          <strong>Miễn trừ rủi ro phần cứng:</strong> Nhà phát triển không chịu trách nhiệm đối với các hư hỏng động cơ, phần cứng ECU hoặc rủi ro vận hành xuất phát từ việc cài đặt thông số sai lệch hoặc thiết bị BLE bị gián đoạn nguồn trong quá trình nạp dữ liệu.
+        </li>
       </ul>
 
-      <h2>3. Miễn trừ trách nhiệm</h2>
+      <div class="info-box">
+        <div class="info-box-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          Lưu ý quan trọng khi nạp bản đồ ECU
+        </div>
+        <p>
+          Luôn đảm bảo nguồn điện ắc quy xe và pin điện thoại ổn định trong suốt quá trình lưu dữ liệu cài đặt xuống ECU để tránh gián đoạn truyền dữ liệu.
+        </p>
+      </div>
+
+      <h2>3. Sở hữu trí tuệ</h2>
       <p>
-        Ứng dụng cung cấp “nguyên trạng”. Nhà phát triển không chịu trách nhiệm thiệt hại
-        do cấu hình sai, lỗi phần cứng hoặc sử dụng ngoài hướng dẫn kỹ thuật.
+        Toàn bộ mã nguồn, thiết kế giao diện, logo, thuật toán mã hóa giao thức và tài liệu liên quan đến 
+        <strong>DN TUNING V2</strong> thuộc bản quyền sở hữu của <strong>Nguyễn Văn Dương</strong>. 
+        Mọi hành vi sao chép, giải mã ngược (reverse engineering) hoặc phân phối lại không có sự chấp thuận đều bị cấm.
       </p>
 
-      <h2>4. Chế độ xem thử</h2>
+      <h2>4. Chấm dứt dịch vụ</h2>
       <p>
-        Dữ liệu mô phỏng trong chế độ App Review không ghi xuống phần cứng thật.
+        Chúng tôi có quyền từ chối dịch vụ hoặc thu hồi quyền truy cập bản quyền MAC đối tác nếu phát hiện các hành vi vi phạm bản quyền hoặc gian lận hệ thống.
       </p>
-
-      <h2>5. Quyền riêng tư</h2>
-      <p>
-        Xem <a href="privacy-policy.html">Chính sách quyền riêng tư</a> để biết cách xử lý dữ liệu.
-      </p>
-
-      <h2>6. Thay đổi điều khoản</h2>
-      <p>Phiên bản mới được đăng tại cùng địa chỉ URL.</p>
 
       <div class="cta-row">
-        <a class="btn btn-primary" href="mailto:vbx6623@gmail.com?subject=DN%20TUNING%20V2%20%E2%80%94%20Terms">Liên hệ</a>
-        <a class="btn btn-ghost" href="support.html">Trang hỗ trợ</a>
+        <a class="btn btn-primary" href="support.html">
+          Liên hệ Hỗ trợ Kỹ thuật
+        </a>
+        <a class="btn btn-ghost" href="index.html">← Quay lại Trang chủ</a>
       </div>
     </main>
 
     <footer class="site-footer">
       <div class="footer-links">
-        <a href="privacy-policy.html">Quyền riêng tư</a>
+        <a href="index.html">Trang chủ</a>
         <a href="support.html">Hỗ trợ</a>
+        <a href="privacy-policy.html">Quyền riêng tư</a>
       </div>
-      © 2026 Nguyễn Văn Dương · DN TUNING V2
+      <p>© 2026 Nguyễn Văn Dương · DN TUNING V2. All rights reserved.</p>
     </footer>
   </div>
 </body>
